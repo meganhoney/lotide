@@ -9,13 +9,14 @@ const assertEqual = function(actual, expected) {
 // arrays can't be compared with ===
 // take input arrays and join in string
 // compare the two strings
+
 const eqArrays = function(array1, array2) {
   let firstArray = array1.join('');
   let secondArray = array2.join('');
-
-  if (firstArray === secondArray) {
-    return true;
-  };
+  //console.log(firstArray);
+  //console.log(secondArray);
+  return firstArray === secondArray ? true
+    : false;
 }
 // use assertEqual to write test cases 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); 
