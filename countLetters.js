@@ -13,18 +13,20 @@ const countLetters = function(letters) {
   const finalCount = {};
   for (const letter of letters) {
     //console.log(letter);
-    // check if letter has already been counted
-    if (finalCount[letter]) {
-      finalCount[letter] += 1;
-    } else if (letter === ' '){ // check if key is a space, delete
-      delete finalCount[letter];
-    } else {
-      // if it it first time, set value of letter key to 1
-      finalCount[letter] = 1;
+    // check if letter is a letter or space
+    if (letter !== " ") {
+      if (finalCount[letter]) {
+        // check if letter has been counted yet or not, if yes add 1
+        finalCount[letter] += 1;
+      } else {
+        // if it it first time, set value of letter key to 1
+        finalCount[letter] = 1;
+      }
+      
     }
   }
   return finalCount;
-}
+};
 console.log('The letters in \'Hello my name is Megan\' are:', countLetters('Hello my name is Megan'));
 
 const goodString = 'good string';
