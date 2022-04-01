@@ -47,3 +47,7 @@ const numbers = [42.62, 68.23, 55.55, 12.14, 90.99];
 const results3 = map(numbers, number => number * 100);
 
 assertArraysEqual(results3, [4262, 6823, 5555, 1214, 9099]);
+
+// testing 4
+const results4 = map(words, word => word.length);
+assertArraysEqual(results4, [4, 1, 6, 3, 5]);
