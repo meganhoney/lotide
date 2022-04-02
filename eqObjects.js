@@ -32,10 +32,11 @@ const eqObjects = function(object1, object2) {
   for (let key of object1Keys) {
     // check if each property key contains an array as a value
     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-      // then use eqArrays on them
-      return eqArrays(object1[key], object2[key]);
-    }
-    if (object1[key] !== object2[key]) {
+      //if eqArrays is false, return false
+      if (!eqArrays(object1[key], object2[key])) {
+        return false;
+      }
+    } else if (object1[key] !== object2[key]) {
       return false;
     }
   }
@@ -67,13 +68,13 @@ assertEqual(result4, false);
 
 
 const testObj1 = {
-  Names: ["Megan", "Julia", "Cassie"], 
+  Names: ["Megan", "Julia", "Cassie"],
   Ages: [31, 35, 28]
-}
+};
 
 const testObj2 = {
-  Names: ["Megan", "Julia", "Cassie"], 
-  Ages: [31, 44, 28]
-}
+  Names: ["Megan", "Julia", "Cassie"],
+  Ages: [31, 35, 28]
+};
 const result5 = eqObjects(testObj1, testObj2);
-assertEqual(result5, false);
+assertEqual(result5, true);
