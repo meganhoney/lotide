@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@mjthoney/lotide",
   "version": "1.0.0",
   "description": "A library of Javascript seventeen simple Javascript utility functions that operate mainly on Arrays and Objects",
   "main": "index.js",
