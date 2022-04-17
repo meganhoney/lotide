@@ -1,8 +1,8 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "### Lotide will be a clone of [Lodash](https://github.com/lodash/lodash)",
-  "main": "assertArraysEqual.js",
+  "description": "A library of Javascript seventeen simple Javascript utility functions that operate mainly on Arrays and Objects",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/meganhoney/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "mjthoney",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/meganhoney/lotide/issues"
