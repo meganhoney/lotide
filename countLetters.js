@@ -35,3 +35,5 @@ const result1 = countLetters(goodString);
 assertEqual(result1["g"], 1); // should fail
 assertEqual(result1["o"], 2); // should pass
 assertEqual(result1["d"], 1); // should pass
+
+module.exports = countLetters;

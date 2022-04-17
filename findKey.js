@@ -39,3 +39,5 @@ const albumsByYear = {
 };
 
 assertEqual(findKey(albumsByYear, x => x === 'Physical Graffiti'), "1975");
+
+module.exports = findKey;

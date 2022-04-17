@@ -26,3 +26,5 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Arthur"), "undefined");
+
+module.exports = findKeyByValue;

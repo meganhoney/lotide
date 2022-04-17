@@ -46,3 +46,5 @@ const result1 = letterPositions(goodString);
 assertArraysEqual(result1["g"], [0, 10]); // should pass
 assertArraysEqual(result1["o"], [1, 2]); // should pass
 assertArraysEqual(result1["d"], [3, 4]); // should fail
+
+module.exports = letterPositions;

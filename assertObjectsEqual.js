@@ -57,3 +57,5 @@ const testObj2 = {
 assertObjectsEqual(testObj1, testObj2);
 assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' });
 assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1', c: 3 });
+
+module.exports = assertObjectsEqual;

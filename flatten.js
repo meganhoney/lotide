@@ -48,3 +48,5 @@ assertArraysEqual(result1, ["hello", "human", "alien", "how", "you", "doin"]);
 const nestedArray2 = [10, 20, [25, 35, 45, 55], 60, 70, [99, 100]];
 const result2 = flatten(nestedArray2);
 assertArraysEqual(result2, [10, 20, 25, 35, 45, 55, 60, 70, 99, 100]);
+
+module.exports = flatten;

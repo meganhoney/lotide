@@ -78,3 +78,5 @@ const testObj2 = {
 };
 const result5 = eqObjects(testObj1, testObj2);
 assertEqual(result5, true);
+
+module.exports = eqObjects;
