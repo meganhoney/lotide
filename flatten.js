@@ -32,10 +32,10 @@ const flatten = function(elements) {
       }
     } else {
       flatArray.push(element);
-      }
+    }
   }
   return flatArray;
-}
+};
 
 // test
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]

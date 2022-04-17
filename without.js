@@ -33,7 +33,7 @@ const without = function(source, itemsToRemove) {
   }
 
   return arrayWithout;
-}
+};
 
 // testing examples
 console.log(without([1, 2, 3], [1])); // => [2, 3]

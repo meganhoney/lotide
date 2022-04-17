@@ -1,6 +1,6 @@
 // map function will take in two arguments:
-  // array to map
-  // callback function
+// array to map
+// callback function
 // return new array based on results of callback fn
 const map = function(array, callback) {
   const results = [];
