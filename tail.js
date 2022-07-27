@@ -8,11 +8,8 @@
 
 const tail = function(input) {
   let output = [];
-  // use slice to return the tail portion of array
-  // and assign to output array
-  // start at 1 - second value in array
+  // slice will return the tail portion of array
   output = input.slice(1);
-  // return output
   return output;
 };
 
