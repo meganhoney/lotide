@@ -1,7 +1,7 @@
-// Implement a function eqArrays which takes in two arrays
-// and returns true or false based on a perfect match
+// Function to return boolean value after comparing two input arrays
+// true if perfect match, false if not
 const eqArrays = function(array1, array2) {
-  //compare length first to rule out
+  // rule out arrays that are of different lengths
   if (array1.length !== array2.length) {
     return false;
   }
