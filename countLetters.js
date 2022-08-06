@@ -4,22 +4,17 @@ const assertEqual = function(actual, expected) {
     : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
-// function countLetters
-// take in a sentence (string)
-// return count of each letter in that sentence
-// tip: for...of loops work with strings
+// function to return count of each letter in input string
 const countLetters = function(letters) {
-  // create empty object where the letter counts will go
+  
   const finalCount = {};
   for (const letter of letters) {
-    //console.log(letter);
-    // check if letter is a letter or space
     if (letter !== " ") {
       if (finalCount[letter]) {
-        // check if letter has been counted yet or not, if yes add 1
+        // check if letter has been added to object, if yes add 1
         finalCount[letter] += 1;
       } else {
-        // if it it first time, set value of letter key to 1
+        // if it has not been added, set value of letter key to 1
         finalCount[letter] = 1;
       }
       
