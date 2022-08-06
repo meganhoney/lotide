@@ -1,4 +1,3 @@
-// require chai assert and tail
 const assert = require('chai').assert;
 const tail = require('../tail');
 
