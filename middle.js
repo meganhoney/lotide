@@ -1,7 +1,9 @@
-// middle should take in an array and return the middle-most-element(s)
+// Function to return middle-most element(s) of input array
+
 // arrays with one or two elements should return empty
 // arrays with odd number elements should return one element
 // arrays with even number of elements should return two elements
+
 const middle = function(array) {
   let middleValue = [];
   if (array.length < 3) {

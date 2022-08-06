@@ -1,4 +1,3 @@
-// require chai assert and middle
 const assert = require('chai').assert;
 const middle = require('../middle');
 
